@@ -1,0 +1,6 @@
+# Root (monorepo) — keep local junk and secrets out of Git
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
