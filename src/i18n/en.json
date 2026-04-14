@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Manokamana Trading Company",
+    "subtitle": "Panther E-Rickshaw & E-Scooter | The Battery Shop",
+    "cta": "Call Now",
+    "description": "Sales, repair and warranty service for E-Rickshaws, batteries, inverters and spare parts"
+  },
+  "stats": {
+    "warranty": "13+ Months Warranty",
+    "authorized": "Panther Authorized Dealer",
+    "experience": "Trusted Service",
+    "parts": "All Spare Parts Available"
+  },
+  "services": {
+    "title": "Our Services",
+    "sale": {
+      "title": "Sales",
+      "description": "Sales of Panther E-Rickshaws, E-Scooters, batteries, inverters and all types of spare parts"
+    },
+    "repair": {
+      "title": "Repair",
+      "description": "Complete repair and restoration service for E-Rickshaws and E-vehicles by experienced technicians"
+    },
+    "warranty": {
+      "title": "Warranty",
+      "description": "Products with up to 13 months warranty. Reliable after-sales service"
+    },
+    "assembly": {
+      "title": "Assembly",
+      "description": "Complete E-Rickshaw assembly and customization service as per your requirements"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "callForPrice": "Call for Price",
+    "categories": {
+      "eRickshaw": "E-Rickshaw",
+      "battery": "Battery",
+      "inverter": "Inverter",
+      "spareParts": "Spare Parts",
+      "tires": "Tires",
+      "tools": "Tools & Equipment"
+    },
+    "eRickshaw": {
+      "title": "Panther E-Rickshaw",
+      "description": "High quality Panther E-Rickshaws with sturdy body and long battery life. Both new and assembled available."
+    },
+    "battery": {
+      "title": "Battery",
+      "description": "Eastman Wattsman Lithium batteries with up to 36 months warranty. Available for both E-Rickshaws and inverters."
+    },
+    "inverter": {
+      "title": "Inverter",
+      "description": "Inverters for domestic and commercial use. Available in various capacities."
+    },
+    "spareParts": {
+      "title": "Spare Parts",
+      "description": "Bearings, gears, brake shoes, DC-DC converters, speedometers, oil seals and all other parts."
+    },
+    "tires": {
+      "title": "Tires",
+      "description": "High quality tires for E-Rickshaws. Available in all sizes."
+    },
+    "tools": {
+      "title": "Tools & Equipment",
+      "description": "All types of tools and equipment for repairs. DRL lamps, headlights, battery chargers etc."
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "shopTab": "Shop",
+    "inaugurationTab": "Inauguration",
+    "close": "Close"
+  },
+  "about": {
+    "title": "About Us",
+    "ownerTitle": "Founder & Owner",
+    "ownerName": "Ashish Jaiswal",
+    "story": "Manokamana Trading Company is a trusted E-vehicle dealership located in Brijmanganj, Shahabad, Uttar Pradesh. We are the authorized distributor of Panther E-Rickshaws and E-Scooters.",
+    "mission": "Our mission is to provide clean and affordable transportation solutions in rural and urban areas. Along with sales, we provide complete repair, assembly and warranty services.",
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality - Only trusted brands",
+      "service": "Service - Customer satisfaction is paramount",
+      "trust": "Trust - 13+ months warranty",
+      "price": "Fair Pricing - Best prices guaranteed"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone Number",
+    "email": "Email",
+    "address": "Address",
+    "addressText": "Main Road, Brijmanganj, Shahabad, Uttar Pradesh - 273157",
+    "landmark": "Landmark",
+    "landmarkText": "Beside Mahatma Gandhi Inter College",
+    "callNow": "Call Now",
+    "whatsapp": "Message on WhatsApp",
+    "mapTitle": "Our Location",
+    "gstin": "GSTIN"
+  },
+  "footer": {
+    "tagline": "Trusted name in E-Rickshaws, Batteries and Spare Parts",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "developer": "Created by",
+    "rights": "All rights reserved"
+  },
+  "chatbot": {
+    "title": "Manokamana Assistant",
+    "placeholder": "Ask your question...",
+    "send": "Send",
+    "greeting": "Hello! 🙏 I am the AI assistant of Manokamana Trading Company. You can ask me anything about our products, services, prices or shop.",
+    "voiceTooltip": "Ask by voice",
+    "thinking": "Thinking..."
+  },
+  "common": {
+    "callNow": "Call Now",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "language": "हिंदी",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}
