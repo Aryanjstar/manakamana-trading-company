@@ -28,7 +28,7 @@ import {
 } from './userSlice';
 
 // Base URL for API calls
-const REACT_APP_BASE_URL = "http://localhost:5000";
+const REACT_APP_BASE_URL = "http://localhost:5001";
 
 // The rest of your code (function definitions) follows.
 

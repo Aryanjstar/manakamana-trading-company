@@ -36,7 +36,7 @@ function resetApp() {
 // Check if backend is accessible
 async function checkBackend() {
     try {
-        const response = await fetch('http://localhost:5000/getProducts');
+        const response = await fetch('http://localhost:5001/getProducts');
         console.log('✅ Backend is accessible');
         console.log('Status:', response.status);
         const data = await response.json();
