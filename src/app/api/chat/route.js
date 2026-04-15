@@ -1,4 +1,7 @@
 import { SYSTEM_PROMPT } from '@/lib/chatSystemPrompt';
+import https from 'https';
+
+const agent = new https.Agent({ rejectUnauthorized: false });
 
 export async function POST(request) {
   try {
@@ -18,7 +21,37 @@ export async function POST(request) {
 
     const url = `${endpoint}openai/deployments/${deployment}/chat/completions?api-version=${apiVersion}`;
 
-    const response = await fetch(url, {
+    const fetchWithAgent = (url, options) => {
+      const { hostname, pathname, search } = new URL(url);
+      return new Promise((resolve, reject) => {
+        const req = https.request(
+          {
+            hostname,
+            path: pathname + search,
+            method: options.method || 'GET',
+            headers: options.headers || {},
+            agent,
+          },
+          (res) => {
+            let data = '';
+            res.on('data', (chunk) => (data += chunk));
+            res.on('end', () => {
+              resolve({
+                ok: res.statusCode >= 200 && res.statusCode < 300,
+                status: res.statusCode,
+                json: () => JSON.parse(data),
+                text: () => data,
+              });
+            });
+          }
+        );
+        req.on('error', reject);
+        if (options.body) req.write(options.body);
+        req.end();
+      });
+    };
+
+    const response = await fetchWithAgent(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +77,9 @@ export async function POST(request) {
     }
 
     const data = await response.json();
-    const reply = data.choices?.[0]?.message?.content || 'क्षमा करें, मैं अभी जवाब देने में असमर्थ हूँ। कृपया 8299200015 पर कॉल करें।';
+    const reply =
+      data.choices?.[0]?.message?.content ||
+      'क्षमा करें, मैं अभी जवाब देने में असमर्थ हूँ। कृपया 8299200015 पर कॉल करें।';
 
     return Response.json({ reply });
   } catch (error) {

@@ -55,7 +55,7 @@ AZURE_OPENAI_API_VERSION=2025-01-01-preview
 
 ## Developer
 
-Created by [Aryan Jaiswal](https://rncsworld.in)
+Created by [Aryan Jaiswal](https://aryanjaiswal.in)
 
 - [GitHub](https://github.com/Aryanjstar)
 - [LinkedIn](https://linkedin.com/in/aryanjstar)

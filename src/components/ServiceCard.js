@@ -7,7 +7,7 @@ export default function ServiceCard({ icon, title, description }) {
         {icon}
       </div>
       <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>
+      <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">{description}</p>
     </div>
   );
 }

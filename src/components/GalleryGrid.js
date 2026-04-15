@@ -10,12 +10,12 @@ const shopImages = [
   { src: '/images/shop/shop-inside-to-outer.jpeg', alt: 'अंदर से बाहर का दृश्य' },
   { src: '/images/shop/shop-side-zoomed.jpeg', alt: 'दुकान साइड दृश्य' },
   { src: '/images/shop/shop-wall-inside.jpeg', alt: 'दुकान की दीवार' },
-  { src: '/images/shop/e-rickshaws.jpeg', alt: 'ई-रिक्शा' },
-  { src: '/images/shop/e-rickshaw-side-view.jpeg', alt: 'ई-रिक्शा साइड दृश्य' },
-  { src: '/images/shop/e-rickshaws-row.jpeg', alt: 'ई-रिक्शा की कतार' },
-  { src: '/images/shop/e-rickshaw-half-assembled.jpeg', alt: 'आधा असेम्बल्ड ई-रिक्शा' },
-  { src: '/images/shop/e-rickshaw-assembly-side.jpeg', alt: 'ई-रिक्शा असेम्बली' },
-  { src: '/images/shop/e-rickshaws-unassembled.jpeg', alt: 'बिना असेम्बल ई-रिक्शा' },
+  { src: '/images/shop/panther-e-rickshaw-shop-display.jpeg', alt: 'Panther ई-रिक्शा शोरूम डिस्प्ले' },
+  { src: '/images/shop/panther-e-rickshaw-passenger-view.jpeg', alt: 'Panther ई-रिक्शा पैसेंजर व्यू' },
+  { src: '/images/shop/panther-e-rickshaw-new-stock-colors.jpeg', alt: 'नया स्टॉक - विभिन्न रंगों में' },
+  { src: '/images/shop/panther-e-rickshaw-assembly-progress.jpeg', alt: 'ई-रिक्शा असेम्बली प्रक्रिया' },
+  { src: '/images/shop/panther-e-rickshaw-full-assembly.jpeg', alt: 'Panther ई-रिक्शा कस्टम असेम्बली' },
+  { src: '/images/shop/panther-e-rickshaw-new-stock-front.jpeg', alt: 'नया स्टॉक फ्रंट व्यू' },
   { src: '/images/shop/batteries-tires.jpeg', alt: 'बैटरी और टायर' },
   { src: '/images/shop/inverter-rods-carpets.jpeg', alt: 'इन्वर्टर और सामान' },
   { src: '/images/shop/spare-parts-bearings.jpeg', alt: 'बियरिंग और स्पेयर पार्ट्स' },
@@ -50,7 +50,7 @@ export default function GalleryGrid() {
       <div className="flex justify-center gap-2 mb-8">
         <button
           onClick={() => setActiveTab('shop')}
-          className={`px-6 py-2.5 rounded-full font-semibold text-sm transition-colors ${
+          className={`px-6 py-2.5 rounded-full font-semibold text-base transition-colors ${
             activeTab === 'shop'
               ? 'bg-primary text-white'
               : 'bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700'
@@ -60,7 +60,7 @@ export default function GalleryGrid() {
         </button>
         <button
           onClick={() => setActiveTab('inauguration')}
-          className={`px-6 py-2.5 rounded-full font-semibold text-sm transition-colors ${
+          className={`px-6 py-2.5 rounded-full font-semibold text-base transition-colors ${
             activeTab === 'inauguration'
               ? 'bg-primary text-white'
               : 'bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700'

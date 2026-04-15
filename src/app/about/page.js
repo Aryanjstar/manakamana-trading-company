@@ -30,7 +30,7 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <p className="text-sm text-primary font-semibold mb-2">{t('about.ownerTitle')}</p>
+            <p className="text-base text-primary font-semibold mb-2">{t('about.ownerTitle')}</p>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {t('about.ownerName')}
             </h2>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-3">
                     {icons[v]}
                   </div>
-                  <p className="text-sm font-semibold text-gray-900 dark:text-white">
+                  <p className="text-base font-semibold text-gray-900 dark:text-white">
                     {t(`about.values.${v}`)}
                   </p>
                 </div>

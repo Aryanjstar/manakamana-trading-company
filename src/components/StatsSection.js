@@ -51,7 +51,7 @@ export default function StatsSection() {
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary mb-3">
                 {stat.icon}
               </div>
-              <p className="text-sm font-semibold text-gray-900 dark:text-white">
+              <p className="text-base font-semibold text-gray-900 dark:text-white">
                 {t(`stats.${stat.key}`)}
               </p>
             </div>

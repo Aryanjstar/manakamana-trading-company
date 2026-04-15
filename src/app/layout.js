@@ -39,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="hi" className={`${notoSans.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="hi" className={`${notoSans.variable} ${inter.variable}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body className="min-h-screen flex flex-col antialiased">
         <ClientProviders>{children}</ClientProviders>
       </body>
