@@ -117,7 +117,7 @@ export default function Chatbot() {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-56 md:bottom-22 right-4 z-50 w-[calc(100vw-2rem)] sm:w-[380px] max-h-[60vh] md:max-h-[480px] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-slate-700 flex flex-col animate-slide-up overflow-hidden">
+        <div className="fixed bottom-56 md:bottom-22 right-4 z-50 w-[calc(100vw-2rem)] sm:w-[380px] max-h-[60vh] md:max-h-[480px] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border-0 flex flex-col animate-slide-up overflow-hidden">
           <div className="bg-primary text-white px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
