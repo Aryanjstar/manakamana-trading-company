@@ -1,3 +1,4 @@
+// v2 - spelling fix: कंपनी
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';

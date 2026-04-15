@@ -1,4 +1,4 @@
-# मनोकामना ट्रेडिंग कम्पनी | Manokamana Trading Company
+# मनोकामना ट्रेडिंग कंपनी | Manokamana Trading Company
 
 > Panther E-Rickshaw & E-Scooter | The Battery Shop — Brijmanganj, Shahabad, UP
 
