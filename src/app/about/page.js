@@ -25,7 +25,8 @@ export default function AboutPage() {
               src="/images/inauguration/ashish-with-brother-2.jpeg"
               alt="आशीष जायसवाल - मालिक"
               fill
-              className="object-cover object-top"
+              className="object-cover"
+              style={{ objectPosition: 'center 20%' }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

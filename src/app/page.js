@@ -325,7 +325,8 @@ export default function Home() {
                 src="/images/inauguration/ashish-with-brother-2.jpeg"
                 alt="आशीष जायसवाल"
                 fill
-                className="object-cover object-top"
+                className="object-cover"
+                style={{ objectPosition: 'center 20%' }}
                 sizes="112px"
               />
             </div>

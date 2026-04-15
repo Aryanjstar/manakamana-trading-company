@@ -18,6 +18,10 @@ const inter = Inter({
 
 export const metadata = {
   title: 'मनोकामना ट्रेडिंग कम्पनी | Panther ई-रिक्शा & बैटरी शॉप',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   description:
     'बृजमनगंज, शाहाबाद में Panther ई-रिक्शा, ई-स्कूटर, बैटरी, इन्वर्टर और स्पेयर पार्ट्स की बिक्री, मरम्मत और वारंटी सेवा। मालिक: आशीष जायसवाल। फ़ोन: 8299200015',
   keywords: [
