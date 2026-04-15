@@ -316,6 +316,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Owner Intro */}
+      <section className="py-12 bg-gray-50 dark:bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center gap-6 bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 dark:border-slate-700">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden shrink-0 shadow-md">
+              <Image
+                src="/images/inauguration/ashish-with-brother-2.jpeg"
+                alt="आशीष जायसवाल"
+                fill
+                className="object-cover object-top"
+                sizes="112px"
+              />
+            </div>
+            <div className="flex-1 text-center sm:text-left">
+              <p className="text-sm font-semibold text-primary mb-0.5">{t('about.ownerTitle')}</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                {t('about.ownerName')}
+              </h3>
+              <p className="text-sm text-primary/80 dark:text-primary-light font-medium mb-2">
+                {t('about.ownerDesignation')}
+              </p>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                {t('about.story')}
+              </p>
+            </div>
+            <Link
+              href="/about"
+              className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white transition-colors text-sm"
+            >
+              {lang === 'hi' ? 'और जानें' : 'Know More'}
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Contact & Support Section */}
       <section className="py-16 bg-gray-50 dark:bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
