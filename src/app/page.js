@@ -138,59 +138,46 @@ export default function Home() {
       </section>
 
       {/* AI Chatbot & Voice Assistant Promo */}
-      <section className="py-14 bg-gradient-to-r from-emerald-600 to-green-700 dark:from-emerald-800 dark:to-green-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="text-white">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-4 bg-white/15 rounded-full text-base font-medium">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                AI Powered
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                {lang === 'hi' ? 'AI सहायक से पूछें!' : 'Ask our AI Assistant!'}
-              </h2>
-              <p className="text-lg text-green-100 mb-3 leading-relaxed">
-                {lang === 'hi'
-                  ? 'हमारे AI चैटबॉट से हिंदी या अंग्रेज़ी में कुछ भी पूछें - उत्पाद, कीमत, सेवाएं या दुकान की जानकारी।'
-                  : 'Ask anything in Hindi or English - products, prices, services or shop information.'}
-              </p>
-              <p className="text-lg text-green-100 mb-6 leading-relaxed">
-                {lang === 'hi'
-                  ? '🎤 आवाज़ से भी पूछ सकते हैं! बस माइक बटन दबाएं और बोलें।'
-                  : '🎤 You can also ask by voice! Just press the mic button and speak.'}
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-                  <span>{lang === 'hi' ? 'टेक्स्ट चैट' : 'Text Chat'}</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
-                  <span>{lang === 'hi' ? 'आवाज़ इनपुट' : 'Voice Input'}</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
-                  <span className="text-lg">🇮🇳</span>
-                  <span>{lang === 'hi' ? 'हिंदी में जवाब' : 'Hindi Replies'}</span>
-                </div>
-              </div>
-              <p className="mt-6 text-green-200 text-base">
-                {lang === 'hi'
-                  ? '👉 नीचे दाईं तरफ़ हरे चैट बटन पर क्लिक करें'
-                  : '👉 Click the green chat button at the bottom right'}
-              </p>
+      <section className="py-10 bg-white dark:bg-slate-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative rounded-2xl bg-gradient-to-r from-emerald-600 to-green-600 dark:from-emerald-800 dark:to-green-800 p-6 sm:p-8 overflow-hidden">
+            <div className="absolute right-4 bottom-4 opacity-10">
+              <svg className="w-32 h-32 sm:w-40 sm:h-40" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="50" r="36" stroke="white" strokeWidth="3"/>
+                <path d="M42 45h6M54 45h6M66 45h6" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+                <path d="M42 56c0 0 6 10 18 10s18-10 18-10" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+                <path d="M30 50c0-16.569 13.431-30 30-30s30 13.431 30 30c0 12-5 19-10 24l2 18-12-8a30 30 0 01-10 2c-16.569 0-30-13.431-30-30z" stroke="white" strokeWidth="3"/>
+                <path d="M56 20l4-8 4 8" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="60" cy="10" r="3" fill="white"/>
+              </svg>
             </div>
-            <div className="relative hidden md:block">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/shop/shop-inside-to-outer.jpeg"
-                  alt="दुकान का दृश्य"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                  sizes="50vw"
-                />
+            <div className="relative flex flex-col sm:flex-row sm:items-center gap-5">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white/20 rounded-2xl flex items-center justify-center shrink-0">
+                <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                  <path d="M8 12h.01M12 12h.01M16 12h.01"/>
+                  <path d="M12 3V1M8.5 4L7 2.5M15.5 4L17 2.5" strokeWidth="1.5"/>
+                </svg>
+              </div>
+              <div className="flex-1 text-white">
+                <h3 className="text-xl sm:text-2xl font-bold mb-1">
+                  {lang === 'hi' ? 'AI सहायक से पूछें!' : 'Ask our AI Assistant!'}
+                </h3>
+                <p className="text-green-100 text-base leading-relaxed">
+                  {lang === 'hi'
+                    ? 'हिंदी या अंग्रेज़ी में टेक्स्ट या आवाज़ से पूछें - उत्पाद, कीमत, सेवाएं, कुछ भी! 👉 हरे चैट बटन पर क्लिक करें'
+                    : 'Ask in Hindi or English by text or voice - products, prices, services, anything! 👉 Click the green chat button'}
+                </p>
+              </div>
+              <div className="flex sm:flex-col gap-2 shrink-0">
+                <div className="flex items-center gap-1.5 bg-white/15 rounded-lg px-3 py-1.5 text-white text-sm">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                  {lang === 'hi' ? 'चैट' : 'Chat'}
+                </div>
+                <div className="flex items-center gap-1.5 bg-white/15 rounded-lg px-3 py-1.5 text-white text-sm">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                  {lang === 'hi' ? 'आवाज़' : 'Voice'}
+                </div>
               </div>
             </div>
           </div>
