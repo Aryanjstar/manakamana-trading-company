@@ -58,7 +58,7 @@ export default function Home() {
               </svg>
             </div>
             <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
-              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0 hidden sm:flex">
                 <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
                   <path d="M8 12h.01M12 12h.01M16 12h.01"/>
@@ -68,11 +68,27 @@ export default function Home() {
                 <h3 className="text-lg sm:text-xl font-bold mb-1">
                   {lang === 'hi' ? '🙏 नमस्ते! AI सहायक से बात करें' : '🙏 Namaste! Talk to our AI Assistant'}
                 </h3>
-                <p className="text-green-100 text-base leading-relaxed">
+                <p className="text-green-100 text-sm sm:text-base leading-relaxed">
                   {lang === 'hi'
-                    ? 'हिंदी, अंग्रेज़ी या हिंग्लिश में पूछें। नीचे दाईं तरफ़ हरे 💬 बटन पर क्लिक करें, टाइप करें या 🎤 माइक दबाकर बोलें!'
-                    : 'Ask in Hindi, English or Hinglish. Click the green 💬 button at bottom-right, type or press 🎤 mic to speak!'}
+                    ? 'हिंदी, अंग्रेज़ी या हिंग्लिश में पूछें - उत्पाद, कीमत, सेवाएं, कुछ भी!'
+                    : 'Ask in Hindi, English or Hinglish - products, prices, services, anything!'}
                 </p>
+              </div>
+              <div className="flex gap-2 shrink-0">
+                <button
+                  onClick={() => window.dispatchEvent(new Event('open-chatbot'))}
+                  className="flex items-center gap-2 bg-white text-emerald-700 font-semibold px-4 py-2.5 rounded-xl hover:bg-green-50 transition-colors text-sm"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                  {lang === 'hi' ? 'चैट करें' : 'Chat'}
+                </button>
+                <button
+                  onClick={() => window.dispatchEvent(new Event('open-chatbot-voice'))}
+                  className="flex items-center gap-2 bg-white/20 text-white font-semibold px-4 py-2.5 rounded-xl hover:bg-white/30 transition-colors text-sm border border-white/30"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                  {lang === 'hi' ? 'बोलकर पूछें' : 'Speak'}
+                </button>
               </div>
             </div>
           </div>

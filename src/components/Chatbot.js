@@ -28,6 +28,20 @@ export default function Chatbot() {
   }, [isOpen, messages.length, t]);
 
   useEffect(() => {
+    const handleOpenChat = () => setIsOpen(true);
+    const handleOpenVoice = () => {
+      setIsOpen(true);
+      setTimeout(() => startVoice(), 400);
+    };
+    window.addEventListener('open-chatbot', handleOpenChat);
+    window.addEventListener('open-chatbot-voice', handleOpenVoice);
+    return () => {
+      window.removeEventListener('open-chatbot', handleOpenChat);
+      window.removeEventListener('open-chatbot-voice', handleOpenVoice);
+    };
+  });
+
+  useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
