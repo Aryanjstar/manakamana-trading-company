@@ -31,9 +31,12 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-base text-primary font-semibold mb-2">{t('about.ownerTitle')}</p>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
               {t('about.ownerName')}
             </h2>
+            <p className="text-sm text-primary font-medium mb-4">
+              {t('about.ownerDesignation')}
+            </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
               {t('about.story')}
             </p>

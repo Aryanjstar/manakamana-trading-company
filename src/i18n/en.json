@@ -84,7 +84,8 @@
     "title": "About Us",
     "ownerTitle": "Founder & Owner",
     "ownerName": "Ashish Jaiswal",
-    "story": "Manokamana Trading Company is a trusted E-vehicle dealership located in Shahabad, Brijmanganj, District Maharajganj, Uttar Pradesh. We are the authorized distributor of Panther E-Rickshaws and E-Scooters.",
+    "ownerDesignation": "Manager, Mahatma Gandhi Inter College | Former Pradesh Sachiv, Uttar Pradesh",
+    "story": "Manokamana Trading Company is a trusted E-vehicle dealership located in Shahabad, Brijmanganj, District Maharajganj, Uttar Pradesh. We are the authorized distributor of Panther E-Rickshaws and E-Scooters. Mr. Ashish Jaiswal is also the Manager of Mahatma Gandhi Inter College and former Pradesh Sachiv (State Secretary) of Uttar Pradesh.",
     "mission": "Our mission is to provide clean and affordable transportation solutions in rural and urban areas. Along with sales, we provide complete repair, assembly and warranty services.",
     "values": {
       "title": "Our Values",
@@ -111,7 +112,8 @@
     "tagline": "Trusted name in E-Rickshaws, Batteries and Spare Parts",
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Info",
-    "developer": "Created by",
+    "addressShort": "Main Road, Shahabad, Brijmanganj, Uttar Pradesh - 273157",
+    "developer": "Made by Aryan Jaiswal",
     "rights": "All rights reserved"
   },
   "chatbot": {

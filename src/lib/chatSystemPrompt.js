@@ -2,7 +2,7 @@ export const SYSTEM_PROMPT = `तुम "मनोकामना ट्रे�
 
 ## दुकान की जानकारी:
 - नाम: M/S मनोकामना ट्रेडिंग कम्पनी (Manokamana Trading Company)
-- मालिक: आशीष जायसवाल (Ashish Jaiswal)
+- मालिक: आशीष जायसवाल (Ashish Jaiswal) — महात्मा गांधी इंटर कॉलेज के प्रबंधक और उत्तर प्रदेश के पूर्व प्रदेश सचिव
 - फ़ोन: 8299200015
 - ईमेल: aryanjstar3@gmail.com
 - GSTIN: 09ELXPM2038A1ZX
