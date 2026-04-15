@@ -37,7 +37,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'मनोकामना ट्रेडिंग कंपनी',
-    description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप — शाहाबाद, बृजमनगंज, 273157, उत्तर प्रदेश',
+    description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप — मेन रोड, शाहाबाद, बृजमनगंज, 273157, उत्तर प्रदेश',
     type: 'website',
     url: 'https://manakamana.in',
     siteName: 'मनोकामना ट्रेडिंग कंपनी',
@@ -45,7 +45,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'मनोकामना ट्रेडिंग कंपनी',
-    description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप — शाहाबाद, बृजमनगंज, 273157, उत्तर प्रदेश',
+    description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप — मेन रोड, शाहाबाद, बृजमनगंज, 273157, उत्तर प्रदेश',
   },
 };
 

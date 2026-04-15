@@ -52,7 +52,7 @@ export default function OGImage() {
 
         {/* Location */}
         <div style={{ fontSize: '26px', color: 'rgba(255,255,255,0.65)' }}>
-          Shahabad, Brijmanganj — 273157, Uttar Pradesh  •  8299200015
+          Main Road, Shahabad, Brijmanganj — 273157, Uttar Pradesh  •  8299200015
         </div>
 
         {/* Domain badge */}
