@@ -1,12 +1,18 @@
-// v2 - spelling fix: कंपनी
+// v4 - bundled Devanagari font for correct Hindi rendering
 import { ImageResponse } from 'next/og';
+import { readFile } from 'fs/promises';
+import path from 'path';
 
-export const runtime = 'edge';
 export const alt = 'मनोकामना ट्रेडिंग कंपनी';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function OGImage() {
+export default async function OGImage() {
+  const [fontData, latinFontData] = await Promise.all([
+    readFile(path.join(process.cwd(), 'public', 'NotoSansDevanagari-Bold.ttf')),
+    readFile(path.join(process.cwd(), 'public', 'Inter-SemiBold.ttf')),
+  ]);
+
   return new ImageResponse(
     (
       <div
@@ -19,7 +25,7 @@ export default function OGImage() {
           alignItems: 'flex-start',
           justifyContent: 'center',
           padding: '60px 80px',
-          fontFamily: 'sans-serif',
+          fontFamily: 'NotoDevanagari, sans-serif',
           position: 'relative',
         }}
       >
@@ -42,18 +48,19 @@ export default function OGImage() {
         </div>
 
         {/* Business name */}
-        <div style={{ fontSize: '72px', fontWeight: 'bold', color: 'white', lineHeight: 1.1, marginBottom: '16px' }}>
+        <div style={{ fontSize: '72px', fontWeight: 'bold', color: 'white', lineHeight: 1.2, marginBottom: '16px' }}>
           मनोकामना ट्रेडिंग कंपनी
         </div>
 
-        {/* Tagline */}
-        <div style={{ fontSize: '34px', color: 'rgba(255,255,255,0.85)', marginBottom: '12px' }}>
+        {/* Tagline - Latin */}
+        <div style={{ fontSize: '34px', color: 'rgba(255,255,255,0.85)', marginBottom: '12px', fontFamily: 'Inter' }}>
           Panther E-Rickshaw &amp; E-Scooter | The Battery Shop
         </div>
 
         {/* Location */}
-        <div style={{ fontSize: '26px', color: 'rgba(255,255,255,0.65)' }}>
-          शाहाबाद, बृजमनगंज, महाराजगंज, UP • 📞 8299200015
+        <div style={{ fontSize: '26px', color: 'rgba(255,255,255,0.65)', display: 'flex', alignItems: 'center', gap: '0' }}>
+          <span style={{ fontFamily: 'NotoDevanagari' }}>शाहाबाद, बृजमनगंज, महाराजगंज,</span>
+          <span style={{ fontFamily: 'Inter', marginLeft: '8px' }}>UP  •  8299200015</span>
         </div>
 
         {/* Domain badge */}
@@ -68,12 +75,29 @@ export default function OGImage() {
             fontSize: '28px',
             color: 'white',
             fontWeight: '600',
+            fontFamily: 'Inter',
           }}
         >
           manakamana.in
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'NotoDevanagari',
+          data: fontData,
+          style: 'normal',
+          weight: 700,
+        },
+        {
+          name: 'Inter',
+          data: latinFontData,
+          style: 'normal',
+          weight: 600,
+        },
+      ],
+    }
   );
 }
