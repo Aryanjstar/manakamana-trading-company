@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
           <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] max-h-[520px]">
             <Image
-              src="/images/inauguration/owner-ashish-jaiswal.jpeg"
+              src="/images/inauguration/ashish-with-brother-2.jpeg"
               alt="आशीष जायसवाल - मालिक"
               fill
               className="object-cover object-top"
