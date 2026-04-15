@@ -20,13 +20,13 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Owner Section */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] max-h-[520px]">
             <Image
               src="/images/inauguration/owner-ashish-jaiswal.jpeg"
               alt="आशीष जायसवाल - मालिक"
-              width={600}
-              height={450}
-              className="w-full h-auto object-cover"
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div>

@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-slate-950 text-gray-300 pb-14 md:pb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1.5fr] gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -67,7 +67,7 @@ export default function Footer() {
                 </svg>
                 aryanjstar3@gmail.com
               </a>
-              <div className="flex items-start gap-2 text-gray-400 text-sm">
+              <div className="flex items-start gap-2 text-gray-400 text-base">
                 <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -83,15 +83,15 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
             <p>&copy; {new Date().getFullYear()} मनोकामना ट्रेडिंग कम्पनी | {t('footer.rights')}</p>
             <div className="flex items-center gap-2 flex-wrap justify-center">
-              <span>{t('footer.developer')}</span>
               <a
                 href="https://aryanjaiswal.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-light hover:text-primary font-medium inline-flex items-center gap-1"
               >
-                Aryan Jaiswal
+                Aryan Jaiswal (अर्जुन जायसवाल)
               </a>
+              <span>{t('footer.developer')}</span>
               <span className="mx-0.5">|</span>
               <div className="flex items-center gap-2.5">
                 <a href="https://aryanjaiswal.in" target="_blank" rel="noopener noreferrer" className="hover:text-primary-light transition-colors" title="Portfolio">

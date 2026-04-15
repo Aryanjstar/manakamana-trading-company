@@ -398,7 +398,7 @@ export default function Home() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-primary py-10">
+      <section className="bg-gradient-to-r from-emerald-600 to-green-600 dark:from-emerald-800 dark:to-green-800 py-10 transition-colors">
         <div className="max-w-4xl mx-auto px-4 text-center text-white">
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">
             {lang === 'hi' ? 'आज ही संपर्क करें!' : 'Contact Us Today!'}
