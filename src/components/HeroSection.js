@@ -30,11 +30,22 @@ export default function HeroSection() {
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-4 max-w-lg leading-relaxed">
               {t('hero.description')}
             </p>
-            <p className="text-base text-gray-500 dark:text-gray-400 mb-8 max-w-lg">
+            <p className="text-base text-gray-500 dark:text-gray-400 mb-6 max-w-lg">
               {lang === 'hi'
                 ? '📍 शाहाबाद, बृजमनगंज, ज़िला महाराजगंज, उ.प्र.'
                 : '📍 Shahabad, Brijmanganj, District Maharajganj, U.P.'}
             </p>
+
+            {/* AI Assistant hint */}
+            <div className="mb-6 p-3 rounded-xl bg-primary/5 border border-primary/15 max-w-lg">
+              <p className="text-base text-gray-700 dark:text-gray-300 flex items-center gap-2">
+                <svg className="w-5 h-5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                {lang === 'hi'
+                  ? 'AI सहायक से पूछें - टेक्स्ट या आवाज़ से! 👉 हरे चैट बटन पर क्लिक करें'
+                  : 'Ask our AI Assistant - text or voice! 👉 Click the green chat button'}
+              </p>
+            </div>
+
             <div className="flex flex-wrap gap-3">
               <a
                 href="tel:8299200015"
@@ -59,35 +70,38 @@ export default function HeroSection() {
             </div>
           </div>
 
+          {/* Hero Image Grid - symmetric layout */}
           <div className="relative animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl row-span-2 aspect-[3/4]">
+            <div className="grid grid-cols-5 gap-3 h-[380px] sm:h-[440px]">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl col-span-3 h-full">
                 <Image
                   src="/images/shop/shop-front.jpeg"
                   alt="मनोकामना ट्रेडिंग कम्पनी - दुकान"
                   fill
                   className="object-cover"
                   priority
-                  sizes="(max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 60vw, 30vw"
                 />
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-                <Image
-                  src="/images/shop/panther-e-rickshaw-shop-display.jpeg"
-                  alt="Panther ई-रिक्शा"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                />
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-                <Image
-                  src="/images/shop/panther-e-rickshaw-new-stock-colors.jpeg"
-                  alt="नया स्टॉक"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                />
+              <div className="col-span-2 flex flex-col gap-3 h-full">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl flex-1">
+                  <Image
+                    src="/images/shop/panther-e-rickshaw-shop-display.jpeg"
+                    alt="Panther ई-रिक्शा"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 40vw, 20vw"
+                  />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden shadow-xl flex-1">
+                  <Image
+                    src="/images/shop/panther-e-rickshaw-new-stock-colors.jpeg"
+                    alt="नया स्टॉक"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 40vw, 20vw"
+                  />
+                </div>
               </div>
             </div>
             <div className="absolute -bottom-3 -left-3 bg-white dark:bg-slate-800 rounded-xl shadow-lg p-3 hidden sm:flex items-center gap-2">

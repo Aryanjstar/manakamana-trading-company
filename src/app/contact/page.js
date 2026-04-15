@@ -108,7 +108,7 @@ export default function ContactPage() {
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">{t('contact.mapTitle')}</h3>
             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-slate-700">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900!2d83.1921294!3d27.1993368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996c62729754a75%3A0x1b7db7df0f9208a!2sMahatma%20Gandhi%20Inter%20College%20Brijmanganj!5e0!3m2!1sen!2sin!4v1"
+                src={`https://maps.google.com/maps?q=27.19884,83.19365&z=18&t=m&output=embed`}
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

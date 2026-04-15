@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* AI Chatbot & Voice Assistant Promo */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-800 dark:to-indigo-900">
+      <section className="py-14 bg-gradient-to-r from-emerald-600 to-green-700 dark:from-emerald-800 dark:to-green-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-white">
@@ -151,34 +151,34 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                 {lang === 'hi' ? 'AI सहायक से पूछें!' : 'Ask our AI Assistant!'}
               </h2>
-              <p className="text-lg text-blue-100 mb-3 leading-relaxed">
+              <p className="text-lg text-green-100 mb-3 leading-relaxed">
                 {lang === 'hi'
                   ? 'हमारे AI चैटबॉट से हिंदी या अंग्रेज़ी में कुछ भी पूछें - उत्पाद, कीमत, सेवाएं या दुकान की जानकारी।'
                   : 'Ask anything in Hindi or English - products, prices, services or shop information.'}
               </p>
-              <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+              <p className="text-lg text-green-100 mb-6 leading-relaxed">
                 {lang === 'hi'
                   ? '🎤 आवाज़ से भी पूछ सकते हैं! बस माइक बटन दबाएं और बोलें।'
                   : '🎤 You can also ask by voice! Just press the mic button and speak.'}
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2">
+              <div className="flex flex-wrap gap-3">
+                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
                   <span>{lang === 'hi' ? 'टेक्स्ट चैट' : 'Text Chat'}</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2">
+                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
                   <span>{lang === 'hi' ? 'आवाज़ इनपुट' : 'Voice Input'}</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2">
+                <div className="flex items-center gap-2 bg-white/10 rounded-xl px-4 py-2 text-base">
                   <span className="text-lg">🇮🇳</span>
                   <span>{lang === 'hi' ? 'हिंदी में जवाब' : 'Hindi Replies'}</span>
                 </div>
               </div>
-              <p className="mt-6 text-blue-200 text-base">
+              <p className="mt-6 text-green-200 text-base">
                 {lang === 'hi'
-                  ? '👉 नीचे दाईं तरफ़ नीले चैट बटन पर क्लिक करें'
-                  : '👉 Click the blue chat button at the bottom right'}
+                  ? '👉 नीचे दाईं तरफ़ हरे चैट बटन पर क्लिक करें'
+                  : '👉 Click the green chat button at the bottom right'}
               </p>
             </div>
             <div className="relative hidden md:block">
@@ -277,7 +277,7 @@ export default function Home() {
             <div className="mt-2 w-16 h-1 bg-primary mx-auto rounded-full" />
           </div>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
-            {['Panther', 'Eastman Wattsman', 'BBT Bearings', 'Gold Bearings', 'RNF Gear', 'Loder Brake', 'P4U', 'Sakpro Seal'].map((brand) => (
+            {['Panther', 'Eastman Wattsman', 'BBT Bearings', 'Gold Bearings', 'RNF Gear', 'Loder Brake', 'P4U'].map((brand) => (
               <div key={brand} className="px-5 py-3 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 text-base font-semibold text-gray-700 dark:text-gray-300 shadow-sm">
                 {brand}
               </div>
@@ -394,7 +394,7 @@ export default function Home() {
 
             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-slate-700 h-[300px] sm:h-full min-h-[300px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900!2d83.1921294!3d27.1993368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996c62729754a75%3A0x1b7db7df0f9208a!2sMahatma%20Gandhi%20Inter%20College%20Brijmanganj!5e0!3m2!1sen!2sin!4v1"
+                src={`https://maps.google.com/maps?q=27.19884,83.19365&z=18&t=m&output=embed`}
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

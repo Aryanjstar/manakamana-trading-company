@@ -2,6 +2,15 @@
 import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
+function formatMessage(text) {
+  let formatted = text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/^- /gm, '• ')
+    .replace(/\n/g, '<br/>');
+  return formatted;
+}
+
 export default function Chatbot() {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +61,7 @@ export default function Chatbot() {
         ...prev,
         {
           role: 'assistant',
-          content: 'क्षमा करें, कुछ गड़बड़ हो गई। कृपया 8299200015 पर कॉल करें।',
+          content: 'क्षमा करें, कुछ गड़बड़ हो गई। कृपया 8299200015 पर कॉल करें या aryanjstar3@gmail.com पर ईमेल करें।',
         },
       ]);
     } finally {
@@ -91,10 +100,9 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* Chat Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-40 md:bottom-6 right-5 z-50 w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
+        className="fixed bottom-40 md:bottom-6 right-5 z-50 w-14 h-14 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110"
         title={t('chatbot.title')}
       >
         {isOpen ? (
@@ -108,10 +116,8 @@ export default function Chatbot() {
         )}
       </button>
 
-      {/* Chat Panel */}
       {isOpen && (
         <div className="fixed bottom-56 md:bottom-22 right-4 z-50 w-[calc(100vw-2rem)] sm:w-[380px] max-h-[60vh] md:max-h-[480px] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-slate-700 flex flex-col animate-slide-up overflow-hidden">
-          {/* Header */}
           <div className="bg-primary text-white px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
@@ -128,7 +134,6 @@ export default function Chatbot() {
             </button>
           </div>
 
-          {/* Messages */}
           <div className="flex-1 overflow-y-auto p-3 space-y-3 min-h-0">
             {messages.map((msg, i) => (
               <div
@@ -141,8 +146,13 @@ export default function Chatbot() {
                       ? 'bg-primary text-white rounded-br-sm'
                       : 'bg-gray-100 dark:bg-slate-800 text-gray-800 dark:text-gray-200 rounded-bl-sm'
                   }`}
+                  dangerouslySetInnerHTML={
+                    msg.role === 'assistant'
+                      ? { __html: formatMessage(msg.content) }
+                      : undefined
+                  }
                 >
-                  {msg.content}
+                  {msg.role === 'user' ? msg.content : undefined}
                 </div>
               </div>
             ))}
@@ -160,7 +170,6 @@ export default function Chatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
           <form onSubmit={handleSubmit} className="p-3 border-t border-gray-200 dark:border-slate-700 shrink-0">
             <div className="flex items-center gap-2">
               <button
