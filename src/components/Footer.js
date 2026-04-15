@@ -26,7 +26,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <span className="text-lg font-bold text-white">मनोकामना ट्रेडिंग कम्पनी</span>
+              <span className="text-lg font-bold text-white">मनोकामना ट्रेडिंग कंपनी</span>
             </div>
             <p className="text-base text-gray-400 mb-4">{t('footer.tagline')}</p>
             <p className="text-base text-gray-400">
@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 pt-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>&copy; {new Date().getFullYear()} मनोकामना ट्रेडिंग कम्पनी | {t('footer.rights')}</p>
+            <p>&copy; {new Date().getFullYear()} मनोकामना ट्रेडिंग कंपनी | {t('footer.rights')}</p>
             <div className="flex items-center gap-2 flex-wrap justify-center">
               <a
                 href="https://aryanjaiswal.in"

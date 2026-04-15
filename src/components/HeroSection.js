@@ -66,7 +66,7 @@ export default function HeroSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl col-span-3 h-full">
                 <Image
                   src="/images/shop/shop-front.jpeg"
-                  alt="मनोकामना ट्रेडिंग कम्पनी - दुकान"
+                  alt="मनोकामना ट्रेडिंग कंपनी - दुकान"
                   fill
                   className="object-cover"
                   priority

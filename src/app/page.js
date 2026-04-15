@@ -39,7 +39,7 @@ const featuredProducts = [
 
 export default function Home() {
   const { t, lang } = useLanguage();
-  const waGeneral = encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कम्पनी से जानकारी चाहिए।');
+  const waGeneral = encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कंपनी से जानकारी चाहिए।');
 
   return (
     <div className="pb-16 md:pb-0">
@@ -429,7 +429,7 @@ export default function Home() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="मनोकामना ट्रेडिंग कम्पनी - शाहाबाद, बृजमनगंज"
+                title="मनोकामना ट्रेडिंग कंपनी - शाहाबाद, बृजमनगंज"
               />
             </div>
           </div>

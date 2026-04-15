@@ -1,7 +1,7 @@
 'use client';
 
 export default function WhatsAppButton() {
-  const msg = encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कम्पनी से जानकारी चाहिए।');
+  const msg = encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कंपनी से जानकारी चाहिए।');
   return (
     <a
       href={`https://wa.me/918299200015?text=${msg}`}

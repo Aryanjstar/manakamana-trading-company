@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'मनोकामना ट्रेडिंग कम्पनी';
+export const alt = 'मनोकामना ट्रेडिंग कंपनी';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -42,7 +42,7 @@ export default function OGImage() {
 
         {/* Business name */}
         <div style={{ fontSize: '72px', fontWeight: 'bold', color: 'white', lineHeight: 1.1, marginBottom: '16px' }}>
-          मनोकामना ट्रेडिंग कम्पनी
+          मनोकामना ट्रेडिंग कंपनी
         </div>
 
         {/* Tagline */}

@@ -44,7 +44,7 @@ export default function ContactPage() {
                   {t('contact.callNow')}
                 </a>
                 <a
-                  href={`https://wa.me/918299200015?text=${encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कम्पनी से संपर्क करना है।')}`}
+                  href={`https://wa.me/918299200015?text=${encodeURIComponent('नमस्ते, मुझे मनोकामना ट्रेडिंग कंपनी से संपर्क करना है।')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-2 bg-green-500 text-white text-base font-semibold rounded-lg hover:bg-green-600 transition-colors"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="मनोकामना ट्रेडिंग कम्पनी - शाहाबाद, बृजमनगंज"
+                title="मनोकामना ट्रेडिंग कंपनी - शाहाबाद, बृजमनगंज"
               />
             </div>
             <p className="mt-3 text-base text-gray-500 dark:text-gray-400 text-center">

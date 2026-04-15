@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'मनोकामना ट्रेडिंग कम्पनी | Panther ई-रिक्शा & बैटरी शॉप',
+  title: 'मनोकामना ट्रेडिंग कंपनी | Panther ई-रिक्शा & बैटरी शॉप',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -36,15 +36,15 @@ export const metadata = {
     'ई-रिक्शा मरम्मत',
   ],
   openGraph: {
-    title: 'मनोकामना ट्रेडिंग कम्पनी',
+    title: 'मनोकामना ट्रेडिंग कंपनी',
     description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप - बृजमनगंज, शाहाबाद',
     type: 'website',
     url: 'https://manakamana.in',
-    siteName: 'मनोकामना ट्रेडिंग कम्पनी',
+    siteName: 'मनोकामना ट्रेडिंग कंपनी',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'मनोकामना ट्रेडिंग कम्पनी',
+    title: 'मनोकामना ट्रेडिंग कंपनी',
     description: 'Panther ई-रिक्शा & ई-स्कूटर | द बैटरी शॉप - बृजमनगंज, शाहाबाद',
   },
 };
