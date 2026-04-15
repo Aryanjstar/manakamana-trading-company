@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#16a34a"/>
+  <!-- Subtle gradient overlay -->
+  <rect width="1200" height="630" fill="url(#grad)" opacity="0.3"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#052e16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <!-- Electric bolt icon centered left -->
+  <rect x="80" y="215" width="200" height="200" rx="40" fill="rgba(255,255,255,0.15)"/>
+  <path d="M195 245L135 330h55l-15 55 75-80h-55z" fill="white"/>
+  <!-- Business name -->
+  <text x="320" y="280" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="white">.(K>.(></text>
+  <text x="320" y="360" font-family="Arial, sans-serif" font-size="68" font-weight="bold" fill="white">M0G!? .M*(@</text>
+  <!-- Tagline -->
+  <text x="320" y="430" font-family="Arial, sans-serif" font-size="34" fill="rgba(255,255,255,0.85)">Panther -0?M6> &amp; -8MB0 | The Battery Shop</text>
+  <!-- Domain -->
+  <text x="320" y="490" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.65)">manakamana.in</text>
+  <!-- Bottom bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="rgba(0,0,0,0.2)"/>
+  <text x="600" y="612" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">6>9>,>&, ,C.(, .9>0>, 	$M$0 *M0&G6 | =Þ 8299200015</text>
+</svg>
